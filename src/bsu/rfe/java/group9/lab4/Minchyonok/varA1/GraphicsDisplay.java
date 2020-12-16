@@ -264,6 +264,8 @@ public class GraphicsDisplay extends JPanel {
 			// Стрелка оси Y
 			GeneralPath arrow = new GeneralPath();
 			// Установить начальную точку ломаной точно на верхний конец оси Y
+			Point2D.Double labelPos = xyToPoint(0, 0);
+			canvas.drawString("0", (float)labelPos.getX(), (float)labelPos.getY());
 			Point2D.Double lineEnd = xyToPoint(0, maxY);
 			arrow.moveTo(lineEnd.getX(), lineEnd.getY());
 			// Вести левый "скат" стрелки в точку с относительными координатами (5,20)
