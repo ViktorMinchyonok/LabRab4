@@ -167,7 +167,7 @@ public class GraphicsDisplay extends JPanel {
 		// Выбрать линию для рисования графика
 		canvas.setStroke(graphicsStroke);
 		// Выбрать цвет линии
-		canvas.setColor(Color.RED);
+		canvas.setColor(Color.BLUE);
 		/* Будем рисовать линию графика как путь, состоящий из множества сегментов (GeneralPath)
 		 * Начало пути устанавливается в первую точку графика, после чего прямой соединяется со
 		 * следующими точками
@@ -204,10 +204,10 @@ public class GraphicsDisplay extends JPanel {
 		for (Double[] point: graphicsData) {
 			if (checkPointCriteria(point)) {
 				// Условие выполняется, значит красим маркер в синий
-				canvas.setColor(Color.BLUE);
+				canvas.setColor(Color.RED);
 			} else {
 				// Выбрать красный цвета для контуров маркеров по умолчанию
-				canvas.setColor(Color.RED);
+				canvas.setColor(Color.BLUE);
 			}
 			
 			// Центр маркера
