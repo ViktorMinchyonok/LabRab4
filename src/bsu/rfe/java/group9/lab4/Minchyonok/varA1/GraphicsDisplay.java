@@ -218,11 +218,11 @@ public class GraphicsDisplay extends JPanel {
 			// Вертикальная линия маркера
 			Line2D.Double mainLine = new Line2D.Double(from, to);
 			Line2D.Double addLine = new Line2D.Double(shiftPoint(from, MARKER_SIZE/4, 0),
-													shiftPoint(from, -MARKER_SIZE/4, 0));
+			shiftPoint(from, -MARKER_SIZE/4, 0));
 			canvas.draw(addLine);
 
 			addLine = new Line2D.Double(shiftPoint(to, MARKER_SIZE/4, 0),
-										shiftPoint(to, -MARKER_SIZE/4, 0));
+			shiftPoint(to, -MARKER_SIZE/4, 0));
 			canvas.draw(addLine);
 			canvas.draw(mainLine);
 
@@ -232,11 +232,11 @@ public class GraphicsDisplay extends JPanel {
 			mainLine = new Line2D.Double(from, to);
 
 			addLine = new Line2D.Double(shiftPoint(from, 0, MARKER_SIZE/4),
-					shiftPoint(from, 0, -MARKER_SIZE/4));
+			shiftPoint(from, 0, -MARKER_SIZE/4));
 			canvas.draw(addLine);
 			
 			addLine = new Line2D.Double(shiftPoint(to, 0, MARKER_SIZE/4),
-					shiftPoint(to, 0, -MARKER_SIZE/4));
+			shiftPoint(to, 0, -MARKER_SIZE/4));
 			canvas.draw(addLine);
 			canvas.draw(mainLine);
 		}
